@@ -139,11 +139,6 @@ int main(void) {
 	//Initial ADC
 	LTC2990_ConfigureControlReg(&hi2c1);
 
-	//Initialize TIM7 to run safety loop
-	HAL_TIM_Base_Start_IT(&htim7);
-
-	//Init TIM16 to run SOC loop
-	HAL_TIM_Base_Start_IT(&htim16);
 
 	/* USER CODE END 2 */
 
